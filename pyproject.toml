@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "parse-json-and-create-pdf"
+version = "0.1.0"
+description = ""
+authors = ["Eles <1494136313@qq.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = "^0.26.0"
+python-barcode = {extras = ["image"], version = "^0.15.1"}
+pytest = "^7.4.4"
+loguru = "^0.7.2"
+pillow = "^10.2.0"
+
+
+[[tool.poetry.source]]
+name = "tuna"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+priority = "default"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+addopts = "-s"

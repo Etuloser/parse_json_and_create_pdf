@@ -1,0 +1,11 @@
+<html>
+  <head>
+    <title>Barcode Parser</title>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet" />
+  </head>
+  <body>
+    <p>In the browser, typing {gateway}/barcode/{barcode} can generate a PNG-format barcode corresponding to the given barcode.</p>
+    <p>Such as {gateway}/barcode/25580510000136</p>
+    <img src="data:image/png;base64,{{ base64_image }}" alt="base64_image" />
+  </body>
+</html>

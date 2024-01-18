@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 2cm; /* 设置内容区域的边距 */
+}
+table,
+th,
+td {
+  border: 1px solid;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  white-space: normal;
+}

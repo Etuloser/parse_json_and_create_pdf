@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Barcode</title>
+    <link
+      href="{{ url_for('static', path='/barcode.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>Surefix India</td>
+        <td><img src={{ data["delhivery_logo"] }} /></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <img src={{ data["barcode"] }} alt="barcode" /><br />{{ data["pin"]
+          }}{{ data["sort_code"] }}
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Ship To:<br />
+          {{ data["name"] }} <br />
+          {{ data["name"] }} <br />
+          {{ data["address"] }} <br />
+          {{ data["destination"] }}<br />
+          PIN:{{ data["pin"] }}
+        </td>
+        <td>
+          {{ data["pt"] }}<br />
+          Surface<br />
+          INR {{ data["rs"] }}
+        </td>
+      </tr>
+      <tr>
+        <td>Seller: {{ data["snm"] }}</td>
+      </tr>
+      <tr>
+        <td>Product(Qty)</td>
+      </tr>
+      <tr>
+        <td>SF-RoboRock(1)</td>
+      </tr>
+      <tr>
+        <td>SF-Total(1)</td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <img src={{ data["oid_barcode"] }} alt="oidbarcode" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Return Address: #24, 1st B cross, 2nd Main, Kattigenahalli,
+          Bangalore,<br />
+          Karnataka, India, 560064
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
